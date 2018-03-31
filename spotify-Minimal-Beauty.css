@@ -1,0 +1,212 @@
+/* Written by Zachary Gosse 2017 */
+/* Version 1.1 */
+
+/* Import Font */
+@font-face {
+    font-family: caviarDreams;
+    src: url(https://cyberlapse.github.io/SpotifyStylishExtension/CaviarDreams.woff) ;
+}
+/* @font-face {
+    font-family: caviarDreams;
+    src: url(http://cyberlapse.github.io/SpotifyStylishExtension/CaviarDreams_Bold.ttf) format('truetype');
+    font-weight:bold;
+}
+ */
+
+h2, .link-subtle{
+ 	font-family:caviarDreams !important;   
+}
+
+
+/* Content Viewing */
+.playlist {
+    padding-top: 70px;
+}
+
+.contentSpacing {
+    padding: 0 2em;
+    margin: 0 auto;
+    max-width: 1480px;
+    padding-top: 70px;
+}
+
+.entity-info {
+    margin: 0 auto 1.5em;
+    text-align: center;
+    max-width: 400px;
+    position: absolute;
+    top: 70px;
+}
+
+.tracklist-row--active .position, .tracklist-row--active .tracklist-duration, .tracklist-row--active .tracklist-name, .tracklist-row--active .tracklist-play-pause {
+    color: #d88282!important;
+}
+
+/* ADS BAR :'( */
+#main .root .top-container .main-view-container--has-ads .ads-container{
+    padding-bottom: 200px;
+    visibility: hidden !important;
+}
+
+
+/* NOW PLAYING */
+#main .root .nowPlayingBar-container {
+    background-color: #181818;
+    position: fixed;
+    height: 47px;
+    width: 100%;
+    top: 0px;
+    margin-bottom:60px;
+    z-index: 101;
+    box-shadow:5px 3px 4px rgba(20,20,20, 0.7);
+}
+
+/* DIV INSIDE NOW PLAYING */
+.now-playing-bar {
+    -ms-flex-align: center;
+    align-items: center;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    height: 47px;
+    padding: 0 16px;
+}
+
+
+/* LEFT SIDE NAV BAR */
+#main .root .top-container .nav-bar-container {
+    width: 220px;
+    position: fixed;
+    top: 0px;
+    left: 0;
+    height: 100vh;
+    z-index: 100;
+    box-shadow:2px 3px 5px rgba(20,20,20, 0.6);
+    background-color: rgba(40, 40, 40, 0.70);
+    
+    overflow: auto;
+    min-height: 0!important;
+    will-change: transform;
+    margin-top: 70px !important;
+}
+
+
+/* NOWPLAYING BUTTONS CONTAINER*/
+.player-controls__buttons {
+    margin-bottom: 0px;
+    cursor: default;
+    display: -ms-flexbox;
+    display: flex;
+    width: 224px;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+}
+
+
+/* NOWPLAYING PLAY BUTTON */
+.control-button {
+    background-color: transparent;
+    border: none;
+    color: #6b4d4d;
+    cursor: pointer;
+    width: 26px;
+    min-width: 26px;
+    height: 26px;
+    position: relative;
+    transition: all 33ms cubic-bezier(.3,0,.7,1);
+}
+
+
+/* PROGRESS BAR */
+.progress-bar__fg {
+    background-color: #6b4d4d;
+    border-radius: 2px;
+    height: 4px;
+    width: 0;
+    transition: background-color .1s cubic-bezier(.3,0,.7,1);
+}
+
+/* PLAYLISTS */
+/*.JKKBXFILp09eIN4WugwgY { */
+._1YMukI_FrE7QRuUVSvq_Qe{
+    background-image: linear-gradient(rgb(66, 49, 60), rgb(8, 6, 8) 85%);
+      
+    
+}
+
+
+/* BACKGROUND LAYER*/
+/* .JKKBXFILp09eIN4WugwgY::after { */
+._1YMukI_FrE7QRuUVSvq_Qe::after {
+  content: "";
+  background: url("https://s14.postimg.org/bqz8pkksh/bokeh_evergreen.jpg")!important;
+  background-size: cover !important;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+
+/* CONNECT DEVICES POPUP */
+.connect-device-list-container {
+    position: absolute;
+    width: 280px;
+    bottom: -97vh;
+    right: -124px;
+    display: visible;
+    background: #282828;
+    border-radius: 5px;
+    padding: 5px;
+    z-index: 1002;
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    transition: transform 333ms,opacity 333ms cubic-bezier(.3,0,.7,1);
+}
+
+/* small scroll window */
+.col-xs-12 .col-lg-3 .col-xl-4 .col-sticky{
+        top: 70px;
+}
+
+/* SCROLLBAR STYLES */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: #755351;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #704343;
+}
+::-webkit-scrollbar-thumb:active {
+  background: #4d3535;
+}
+::-webkit-scrollbar-track {
+  background: #666666;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: #666666;
+}
+::-webkit-scrollbar-track:active {
+  background: #333333;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}

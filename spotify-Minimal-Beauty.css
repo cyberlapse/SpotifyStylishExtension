@@ -1,22 +1,66 @@
 /* Written by Zachary Gosse 2017 */
 /* Version 1.1 */
 
+
+/* Background layer */
+._1YMukI_FrE7QRuUVSvq_Qe::after {
+  
+  /******     BACKGROUND FOR SPOTIFY JUST CHANGE URL :)   *********/
+  background: url("https://raw.githubusercontent.com/cyberlapse/SpotifyStylishExtension/gh-pages/bokeh%20evergreen.jpg")!important;
+    
+  content: "";
+  background-size: cover !important;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+}
+
+
+/* Release Radar Cover Image */
+.cover-art-image.cover-art-image-loaded[style="background-image: url(\"https://i.scdn.co/image/0e2df44fc11eac228d51b88e394771b713d363a0\");"]{
+    
+ 	background-image:url("https://raw.githubusercontent.com/cyberlapse/SpotifyStylishExtension/gh-pages/dandelion_plant_flower_seeds_feathers_90323_1920x1080%20(2).jpg") !important; 
+}
+
+/* Discover Weekly Cover Image*/
+.cover-art-image.cover-art-image-loaded[style="background-image: url(\"https://i.scdn.co/image/11258b6c69204820d79575e0587f415735db2350\");"] {
+    
+ 	background-image:url("https://raw.githubusercontent.com/cyberlapse/SpotifyStylishExtension/gh-pages/rockettakeoff.jpg") !important; 
+}
+
 /* Import Font */
 @font-face {
     font-family: caviarDreams;
     src: url(https://cyberlapse.github.io/SpotifyStylishExtension/CaviarDreams.woff) ;
 }
-/* @font-face {
+ @font-face {
     font-family: caviarDreams;
-    src: url(http://cyberlapse.github.io/SpotifyStylishExtension/CaviarDreams_Bold.ttf) format('truetype');
+    src: url(https://cyberlapse.github.io/SpotifyStylishExtension/CaviarDreams_Bold.ttf) format('truetype');
     font-weight:bold;
 }
- */
 
-h2, .link-subtle{
- 	font-family:caviarDreams !important;   
+/*Fonts for links */
+.mo-info-name{
+ font-family:caviarDreams; 
+    font-weight:normal!important;
 }
 
+h1, h2, .link-subtle{
+ 	font-family:caviarDreams !important;  
+    font-weight:normal!important;
+}
+
+.contentSpacing h1{
+  letter-spacing:6px;
+}
+
+.navBar-header {
+ 	visibility: hidden !important;   
+}
 
 /* Content Viewing */
 .playlist {
@@ -93,6 +137,17 @@ h2, .link-subtle{
     margin-top: 70px !important;
 }
 
+.navBar-link--active, .navBar-link--active:focus, .navBar-link--active:hover {
+    color: #cc7f7f;
+}
+
+.EYVkZXmTImKH4iH48N7Uj._1-aXXBO8bQU1WTFY-7B0m-:after {
+    background-color: #6b4d4d!important;
+}
+
+.EYVkZXmTImKH4iH48N7Uj._1-aXXBO8bQU1WTFY-7B0m-:hover:after {
+    background-color: #dddddd!important;
+}
 
 /* NOWPLAYING BUTTONS CONTAINER*/
 .player-controls__buttons {
@@ -131,6 +186,14 @@ h2, .link-subtle{
     transition: background-color .1s cubic-bezier(.3,0,.7,1);
 }
 
+.progress-bar:hover .progress-bar__fg {
+    background-color: #dddddd!important;
+    border-radius: 2px;
+    height: 4px;
+    width: 0;
+    transition: background-color .1s cubic-bezier(.3,0,.7,1);
+}
+
 /* PLAYLISTS */
 /*.JKKBXFILp09eIN4WugwgY { */
 ._1YMukI_FrE7QRuUVSvq_Qe{
@@ -140,20 +203,6 @@ h2, .link-subtle{
 }
 
 
-/* BACKGROUND LAYER*/
-/* .JKKBXFILp09eIN4WugwgY::after { */
-._1YMukI_FrE7QRuUVSvq_Qe::after {
-  content: "";
-  background: url("https://s14.postimg.org/bqz8pkksh/bokeh_evergreen.jpg")!important;
-  background-size: cover !important;
-  opacity: 0.5;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1;   
-}
 
 
 /* CONNECT DEVICES POPUP */
